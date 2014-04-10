@@ -1,0 +1,26 @@
+body {
+    background-image: url('../images/fondo-web.jpg');
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.center { max-width: 680px; margin: 0px auto;}
+.row { width:100%; overflow: hidden; }
+
+#proximamente {
+    width: 45%;
+    float: left;
+}
+#proximamente img { width: 100%;}
+
+#portada {
+    width: 51%;
+    float: right;
+}
+#portada img { width: 98%; box-shadow: 1px 1px 3px rgba(0,0,0,0.5); margin: 1%;}
+
+#info { display: none;}
+
+#banners { margin-top: 8%;}
+
+#videoclip { margin-top: 8%;}

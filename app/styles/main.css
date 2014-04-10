@@ -1,10 +1,13 @@
 body {
     background-image: url('../images/fondo-web.jpg');
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10;
     color: #333;
+    margin: 0; padding: 0;
 }
+a { color: black;}
 
-.center { max-width: 680px; margin: 0px auto;}
+.center { max-width: 680px; margin: 0 auto; padding: 0 10px;}
 .row { width:100%; overflow: hidden; }
 
 #proximamente {
@@ -24,3 +27,20 @@ body {
 #banners { margin-top: 8%;}
 
 #videoclip { margin-top: 8%;}
+
+#releases { }
+.release { width: 43%; margin: 5% 5% 0 2%; float: left;}
+.release img { width: 100%; box-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+#release-unmaldia { margin: 5% 2% 0 5%; }
+
+
+footer { 
+	border-top: 1px solid rgba(0,0,0,0.35); 
+	margin-top: 50px; 
+	background-color: rgba(0,0,0,0.3); 
+	padding: 30px 0; 
+	font-size: 12px;
+	line-height: 1.4em;
+}
+#license { float: left; width: 47%; margin: 0 3% 0 0; }
+#about { float: left; width: 47%; margin: 0 0 0 3%; }

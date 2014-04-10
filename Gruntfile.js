@@ -306,6 +306,7 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
+                        'images/portada640.jpg',
                         'styles/fonts/*'
                     ]
                 }, {
@@ -376,8 +377,8 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        'jshint',
-        'test',
+//        'jshint',
+//        'test',
         'build'
     ]);
     

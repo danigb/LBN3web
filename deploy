@@ -6,16 +6,14 @@ if [ $# -eq 0 ]
         echo $ERRORSTRING;
 elif [ $1 == "live" ]
     then
-        mkdir ./dist/downloads
-        cp ./downloads/* ./dist/downloads
         if [[ -z $2 ]]
             then
                 echo "Running dry-run"
-                rsync --dry-run -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./dist/ deployer@liki.es:~/lbn3prev
+                rsync --dry-run -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./dist/ deployer@liki.es:~/LBN3/web
         elif [ $2 == "go" ]
             then
                 echo "Running actual deploy"
-                rsync -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./dist/ deployer@liki.es:~/lbn3prev
+                rsync -az --force --delete --progress --exclude-from=rsync_exclude.txt -e "ssh -p22" ./dist/ deployer@liki.es:~/LBN3/web
         else
             echo $ERRORSTRING;
         fi

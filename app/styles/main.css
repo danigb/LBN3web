@@ -22,16 +22,25 @@ a { color: black;}
 }
 #portada img { width: 98%; box-shadow: 1px 1px 3px rgba(0,0,0,0.5); margin: 1%;}
 
+#lbn3-titulo { width: 55%; margin: 10% auto 5% auto;}
+#lbn3-titulo img { width: 100%; }
+
+#lbn3-portada {  }
+#lbn3-portada img { width: 100%; }
+#lbn3-player { }
+
 #info { display: none;}
 
 #banners { margin-top: 8%;}
 
 #videoclip { margin-top: 8%;}
 
-#releases { }
-.release { width: 43%; margin: 5% 5% 0 2%; float: left;}
+#releases { margin: 120px 0;}
+.release .cover { float: left; width: 36%; margin: 0 3% 20px 0;}
+.release .description { float: right; width: 60%; }
+.release .description p { margin-top: 0; font-size: 12px;}
 .release img { width: 100%; box-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
-#release-unmaldia { margin: 5% 2% 0 5%; }
+
 
 
 footer { 

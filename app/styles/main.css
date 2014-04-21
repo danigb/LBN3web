@@ -36,11 +36,14 @@ p a:hover { text-decoration: underline;}
 
 #lbn3-portada {  }
 #lbn3-portada img { width: 100%; }
-#lbn3-player { }
+
+@media(max-width: 640px) {
+	#lbn3-player { height: 120px; overflow: hidden;}
+}
 
 #info { display: none;}
 
-#banners { margin-top: 8%;}
+#announcement img { width: 100%; }
 
 #videos { 
 	border-top: 1px solid rgba(0,0,0,0.35); 

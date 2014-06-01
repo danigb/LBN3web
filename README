@@ -9,5 +9,5 @@ DEVELOP:
 grunt serve
 
 DEPLOY:
-
+grunt build
 ./deploy live go

@@ -1,17 +1,17 @@
 body {
     background-image: url('../images/fondo-web.jpg');
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 10;
+    font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
     color: #333;
     margin: 0; padding: 0;
 }
 a { color: black;}
 
 p {
-	margin-top: 0px; font-size: 12px;
+	margin-top: 0px; font-size: 14px;
 	line-height: 1.6em;
 }
-p a { font-weight: bold; color: rgba(0,0,0,0.7); nocolor: #63b2cc; text-decoration: none; }
+p a { color: rgba(0,0,0,1); nocolor: #63b2cc; text-decoration: none; }
 p a:hover { text-decoration: underline;}
 
 .center { max-width: 680px; margin: 0 auto; padding: 0 10px;}

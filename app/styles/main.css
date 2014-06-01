@@ -23,11 +23,19 @@ p a:hover { text-decoration: underline;}
   box-shadow: 0px 1px 7px rgba(0,0,0,0.3);
 }
 
-#proximamente {
-    width: 45%;
-    float: left;
+h2.replace {
+  overflow: hidden;
+  text-indent: -1000px;
 }
-#proximamente img { width: 100%;}
+
+#titulo-videos {
+    background: url('../images/videos.png') no-repeat;
+    height: 34px;
+}
+
+#venta-de-discos {
+  background: url('../images/venta-de-discos.png') no-repeat;
+}
 
 #portada {
     width: 51%;
@@ -43,6 +51,23 @@ p a:hover { text-decoration: underline;}
 
 @media(max-width: 640px) {
 	#lbn3-player { height: 120px; overflow: hidden;}
+}
+
+span.button {
+  display: inline-block;
+  height: 16px;
+  overflow: hidden; text-indent: -1000px;
+  background: url('../images/descarga-compra.png') no-repeat;
+}
+
+span.button.download {
+  width: 104px;
+  background-position: 0 3px;
+}
+
+span.button.buy {
+  width: 90px;
+  background-position: 0 -19px;
 }
 
 #info { display: none;}

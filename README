@@ -1,5 +1,7 @@
 
-This is the thirth iteration of Las Buenas Noches web site.
+This is the third iteration of Las Buenas Noches web site.
+
+www.lasbuenasnoches.com
 
 Made with yeoman.
 
@@ -9,5 +11,3 @@ grunt serve
 DEPLOY:
 
 ./deploy live go
-
-

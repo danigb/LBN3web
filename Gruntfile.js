@@ -18,6 +18,8 @@ module.exports = function (grunt) {
     // load all grunt tasks
     require('load-grunt-tasks')(grunt);
 
+    grunt.loadNpmTasks('grunt-include-replace');
+
     // configurable paths
     var yeomanConfig = {
         app: 'app',
@@ -46,6 +48,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= yeoman.app %>/*.html',
+                    '<%= yeoman.app %>/includes/*.html',
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -65,11 +68,10 @@ module.exports = function (grunt) {
                 }
             }
         },
-        
+
         connect: {
             options: {
                 port: 9000,
-                // change this to '0.0.0.0' to access the server from outside
                 hostname: 'localhost'
             },
             livereload: {
@@ -228,13 +230,13 @@ module.exports = function (grunt) {
             }
         },
 
-        
+
 
         useminPrepare: {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.app %>/index.html'
+            html: '<%= yeoman.dist %>/index.html'
         },
         usemin: {
             options: {
@@ -335,6 +337,10 @@ module.exports = function (grunt) {
                 'svgmin',
                 'htmlmin'
             ]
+        },
+        includereplace: {
+          dist: {
+          }
         }
     });
 
@@ -366,6 +372,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'includereplace',
         'useminPrepare',
         'concurrent:dist',
         'cssmin',
@@ -381,12 +388,12 @@ module.exports = function (grunt) {
 //        'test',
         'build'
     ]);
-    
+
     grunt.registerTask('screenshots', [
         'clean:server',
         'concurrent:server',
         'connect:livereload',
         'autoshot'
     ]);
-    
+
 };

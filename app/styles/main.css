@@ -78,7 +78,8 @@ h5 { font-weight: normal; text-shadow: none; font-size: 18px; margin: 0 0 0.2em 
 
 #releases { margin: 120px 0 60px 0;}
 .release .cover { float: left; width: 36%; margin: 0 3% 20px 0;}
-.release .description { float: right; width: 60%; }
+.release .cover.small { width: 18%; }
+.release .description { float: left; width: 60%; }
 .release .description h3 { display: none; }
 .release .description a { text-decoration: none;}
 .release .description a:hover { text-decoration: underline;}

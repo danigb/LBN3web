@@ -236,7 +236,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.dist %>/index.html'
+            html: '<%= yeoman.app %>/index.html'
         },
         usemin: {
             options: {
@@ -372,7 +372,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'includereplace',
+        //'includereplace',
         'useminPrepare',
         'concurrent:dist',
         'cssmin',

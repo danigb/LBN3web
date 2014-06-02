@@ -10,7 +10,8 @@
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <!-- link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' -->
+        <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
 
         <meta name="Author" content="Las Buenas Noches"/>
         <meta name="Keywords" content="música, music, folk, folclore, creative commons"/>
@@ -40,49 +41,73 @@
          </div>
 
         <div class="center">
-            <div id="lbn3-titulo"><img src="images/lbn-hoyesmanana.png" alt="Hoy ya es mañana, por Las Buenas Noches" /></div>
+            <div id="lbn3-titulo">
+                <img src="images/lbn-hoyesmanana.png" alt="Hoy ya es mañana, por Las Buenas Noches" />
+            </div>
         </div>
-        
+
         <div class="center">
             <div class="row">
-            <div id="lbn3-portada"><img src="images/portada-sin-titulo.680.jpg" alt="Portada de Hoy ya es Mañana" /></div>
+            <div id="lbn3-portada">
+              <a href="#disco-mañana">
+                <img src="images/portada-sin-titulo.680.jpg" alt="Portada de Hoy ya es Mañana" />
+              </a>
+            </div>
             <div id="lbn3-player">
                 <!-- bandcamp album 884923430 -->
                 <iframe style="border: 0; width: 100%; height: 490px;" src="http://bandcamp.com/EmbeddedPlayer/album=884923430/size=large/bgcol=ffffff/linkcol=63b2cc/artwork=none/transparent=true/" seamless><a href="https://lasbuenasnoches.bandcamp.com/album/hoy-ya-es-ma-ana">Hoy ya es mañana por Las Buenas Noches</a></iframe>
             </div>
             </div>
-            <div class="row">
-                <p>
-                  <a href="#shop"><span class="button buy">Compra</span> el CD y próximamente el vinilo.</a>
-                  <a href="images/Las%20Buenas%20Noches%20-%202014%20-%20Hoy%20ya%20es%20man%cc%83ana.zip">
-                  <span class="button download">Descarga</span> gratuita de mp3 en alta calidad.</a>
-                </p>
-            </div>
         </div>
 
-        <div id="videos">
-        <div class="center">
-            <h2 id="titulo-videos" class="replace" style="display:none;">Vídeos</h2>
-             <div id="videoclip" class="row">
-                <iframe class="fitvid" src="//player.vimeo.com/video/91507987" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-             </div>
+        <div id="nubes">
+          <div class="center">
+            <h2 id="titulo-proximos-conciertos" class="">Próximos conciertos</h2>
+            <p>
+              <h4>Madrid - Intruso Bar</h4>
+              <h5>Jueves 19 de Junio 22:00h.</h5>
+              c/Augusto Figueroa, 3.<br>
+              8€ anticipada / 10€ puerta.
+              <a href="https://www.ticketea.com/entradas-buenas-noches-madrid/">Venta anticipada en ticketea.com</a>
+            </p>
+
+            <p>
+              <h4>Valencia - Sala La Llimera</h4>
+              <h5>Viernes 20 de Junio 21:00h.</h5>
+              c/Perez Escrich, 13.<br>
+              4€ en puerta.
+            </p>
+
+            <p>
+              <h4>Teruel - Festival Periférico 2014</h4>
+              <h5>Sábado 21 de Junio 20:00h.</h5>
+              Masía La Torre, Noguerelas.<br>
+            </p>
+          </div>
         </div>
-        </div>
+
+
+
 
         <div id="releases">
         <div class="center">
-            <div  id="release-aventuras" class="row release">
+          <h2>Escucha y descarga</h2>
+            <div  id="release-manana" class="row release">
                  <div class="cover">
-                     <a href="http://antes.lasbuenasnoches.com/canciones-aventuras-domesticas">
                      <img src="images/portada640.jpg" alt="Las Buenas Noches - 2014 - Hoy ya es mañana" />
-                     </a>
                  </div>
                  <div class="description">
+                     <a name="disco-mañana">
+                       <h3>Hoy ya es mañana</h3>
+                     </a>
                      <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=884923430/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://lasbuenasnoches.bandcamp.com/album/aventuras-dom-sticas">Aventuras Domésticas - 2008 - Las Buenas Noches</a></iframe>
-                     <p>Editado en el 2014, está disponible en CD y próximamente en vinilo.<br>
-                     Puedes <a href="http://www.archive.org/download/LasBuenasNoches-2008-AventurasDomesticas/LBN-2008-Aventuras.zip">descargar la versión digital aquí</a>.</p>
+                     <a href="http://www.archive.org/download/LasBuenasNoches-2008-AventurasDomesticas/LBN-2008-Aventuras.zip">
+                       <img src="images/download.png" alt="descarga" />
+                       <span class="download">Descarga gratuíta</span> mp3 a 320kbs en alta calidad.
+                     </a>
                  </div>
-             </div>
+            </div>
+
             <div  id="release-unmaldia" class=" row release">
                     <div class="cover">
                         <a href="http://antes.lasbuenasnoches.com/canciones-un-mal-dia">
@@ -91,10 +116,13 @@
                     </div>
                     <div class="description">
                         <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2826221063/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://lasbuenasnoches.bandcamp.com/album/un-mal-d-a-lo-tiene-cualquiera">Un Mal Día (lo tiene cualquiera) - 2011 - Las Buenas Noches</a></iframe>
-                        <p>Editado en el 2011, está disponible en CD y Vinilo.<br>
-                        Puedes <a href="http://www.archive.org/download/LasBuenasNoches-2011-UnMalDia/Lbn-2011-unMalDiaLoTieneCualquiera.zip">descargar la versión digital aquí</a>.</p>
+                        <a href="http://www.archive.org/download/LasBuenasNoches-2011-UnMalDia/Lbn-2011-unMalDiaLoTieneCualquiera.zip">
+                          <img src="images/download.png" alt="descarga" />
+                          <span class="download">Descarga gratuíta</span> mp3 a 320kbs en alta calidad.
+                        </a>
                     </div>
               </div>
+
               <div  id="release-aventuras" class="row release">
                    <div class="cover">
                        <a href="http://antes.lasbuenasnoches.com/canciones-aventuras-domesticas">
@@ -103,17 +131,28 @@
                    </div>
                    <div class="description">
                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1650859682/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://lasbuenasnoches.bandcamp.com/album/aventuras-dom-sticas">Aventuras Domésticas - 2008 - Las Buenas Noches</a></iframe>
-                       <p>Editado en el 2008, está disponible en CD.<br>
-                       Puedes <a href="http://www.archive.org/download/LasBuenasNoches-2008-AventurasDomesticas/LBN-2008-Aventuras.zip">descargar la versión digital aquí</a>.</p>
+                       <a href="http://www.archive.org/download/LasBuenasNoches-2008-AventurasDomesticas/LBN-2008-Aventuras.zip">
+                         <img src="images/download.png" alt="descarga" />
+                         <span class="download">Descarga gratuíta</span> mp3 a 320kbs en alta calidad.
+                       </a>
                    </div>
                </div>
            </div>
        </div>
        </div>
 
+       <div id="videos">
+         <div class="center">
+             <h2 id="titulo-videos" class="replace" style="display:none;">Vídeos</h2>
+              <div id="videoclip" class="row">
+                 <iframe class="fitvid" src="//player.vimeo.com/video/91507987" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+         </div>
+       </div>
+
        <div class="center">
         <div id="tienda" class="row">
-            <a name="shop">
+            <a name="tienda">
               <h2 id="venta-de-discos" class="replace">Venta de discos</h2>
             </a>
             <p>Si quieres que te enviemos algún disco a casa

@@ -1,6 +1,6 @@
 body {
     background-image: url('../images/fondo-web.jpg');
-    font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Sanchez', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: #333;
     margin: 0; padding: 0;
@@ -14,27 +14,35 @@ p {
 p a { color: rgba(0,0,0,1); nocolor: #63b2cc; text-decoration: none; }
 p a:hover { text-decoration: underline;}
 
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  margin: 2em 0 0.5em 0;
+  color: rgba(0,0,0,1);
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
+  font-weight: 1200px;
+}
+
+h2 { font-size: 42px; }
+h4 { font-weight: normal; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); font-size: 24px; margin: 0.5em 0 0 0;}
+h5 { font-weight: normal; text-shadow: none; font-size: 18px; margin: 0 0 0.2em 0; font-weight: normal;}
+
 .center { max-width: 680px; margin: 0 auto; padding: 0 10px;}
 .row { width:100%; overflow: hidden; }
+
+#nubes {
+  background: url('../images/fondo-nubes.jpg') repeat-x left bottom;
+  margin: 50px 0;
+  padding: 40px 0;
+  border-top: 1px solid rgba(0,0,0,0.35);
+  border-bottom: 1px solid rgba(0,0,0,0.35);
+  opacity: 0.9;
+}
+#nubes h2 { margin: 0; }
 
 #concierto-madrid-valencia {
   margin-bottom: 140px;
   max-height: 353px;
   box-shadow: 0px 1px 7px rgba(0,0,0,0.3);
-}
-
-h2.replace {
-  overflow: hidden;
-  text-indent: -1000px;
-}
-
-#titulo-videos {
-    background: url('../images/videos.png') no-repeat;
-    height: 34px;
-}
-
-#venta-de-discos {
-  background: url('../images/venta-de-discos.png') no-repeat;
 }
 
 #portada {
@@ -53,22 +61,6 @@ h2.replace {
 	#lbn3-player { height: 120px; overflow: hidden;}
 }
 
-span.button {
-  display: inline-block;
-  height: 16px;
-  overflow: hidden; text-indent: -1000px;
-  background: url('../images/descarga-compra.png') no-repeat;
-}
-
-span.button.download {
-  width: 104px;
-  background-position: 0 3px;
-}
-
-span.button.buy {
-  width: 90px;
-  background-position: 0 -19px;
-}
 
 #info { display: none;}
 
@@ -78,14 +70,20 @@ span.button.buy {
 	border-top: 1px solid rgba(0,0,0,0.35);
 	border-bottom: 1px solid rgba(0,0,0,0.35);
 	margin-top: 50px;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.2);
 	padding: 20px 0 80px 0;
 }
 #videoclip { margin-top: 8%;}
 
+
 #releases { margin: 120px 0 60px 0;}
 .release .cover { float: left; width: 36%; margin: 0 3% 20px 0;}
 .release .description { float: right; width: 60%; }
+.release .description h3 { display: none; }
+.release .description a { text-decoration: none;}
+.release .description a:hover { text-decoration: underline;}
+.release .description .download { display: block; font-size: 24px; text-transform: uppercase; }
+.release .description img { width: auto; float: left; margin: 6px 2px 0 0; box-shadow: none; }
 
 .release img { width: 100%; box-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
 
@@ -94,7 +92,7 @@ span.button.buy {
 footer {
 	border-top: 1px solid rgba(0,0,0,0.35);
 	margin-top: 50px;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0.2);
 	padding: 30px 0;
 	font-size: 12px;
 }
